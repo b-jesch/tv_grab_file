@@ -8,7 +8,7 @@ Simply open a terminal and copy the source code from here to /usr/bin. Set the p
 
 <b>Note: Some systems require root privileges to do that above!</b>
 <p>
-Open the TVHeadend Web Interface. Go to config, channel/EPG, EPG grabber modules. Enable the grabber module "internal:XMLTV:Simple file grabber" and set the "extra module parameter" to the absolute path that points your XML file. Don't forget to save the changes.
+Open the TVHeadend Web Interface. Go to config, channel/EPG, EPG grabber modules. Enable the grabber module "internal:XMLTV:Simple file grabber" and set the "Extra Parameter" to the absolute path that points to your XML file. Don't forget to save the changes.
 
 ![TVHeadend Screenshot](images/screenshot.png)
 
