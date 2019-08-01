@@ -10,7 +10,7 @@ then
 fi
 
 OPTARG=""
-source=$1
+SOURCE=$1
 
 for arg
 do
@@ -48,7 +48,7 @@ done
 
 if [ "$dflag" ]
 then
-   printf "tv_grab_file is a simple file grabber\n"
+   printf "Simple file grabber\n"
    exit 0
 fi
 if [ "$vflag" ]
@@ -61,16 +61,16 @@ then
    printf "baseline\n"
    exit 0
 fi
-if [ -z "${source}" ]
+if [ -z "${SOURCE}" ]
 then
   echo "bla"
   exit 0
 else
-  if [ -f "$source" ]
+  if [ -f "$SOURCE" ]
     then
-      cat $source
+      cat $SOURCE
     else
-      printf "File not found: %s\n" $source
+      printf "File not found: %s\n" $SOURCE
       exit 1
     fi
 fi
