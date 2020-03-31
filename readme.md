@@ -1,6 +1,6 @@
 <h1>tv_grab_file - A simple file grabber that grabs your EPG XML Files directly into your TVHeadend server</h1>
 <h2>Usage</h2>
-Simply open a terminal and copy the source code from here to /usr/bin. Set the permissions of the downloaded file to readable and executable: chmod a+rx. Restart TVHeadend.
+Simply open a terminal and execute the code below. Set the permissions of the downloaded file to readable and executable: chmod a+rx. Restart TVHeadend.
 
     cd /usr/bin
     sudo su
