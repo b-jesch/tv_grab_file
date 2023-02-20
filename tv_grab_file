@@ -53,7 +53,7 @@ then
 fi
 if [ "$vflag" ]
 then
-   printf "0.1\n"
+   printf "0.2\n"
    exit 0
 fi
 if [ "$cflag" ]
@@ -66,13 +66,14 @@ then
   echo "bla"
   exit 0
 else
-  if [ -f "$SOURCE" ]
-    then
-      cat $SOURCE
-    else
-      printf "File not found: %s\n" $SOURCE
-      exit 1
-    fi
+  if [[ $SOURCE == *http* ]]; then ##Case URL
+    curl -s $SOURCE
+  elif [ -f "$SOURCE" ]; then  ##Case local File
+    cat $SOURCE
+  else
+    printf "File not found: %s\n" $SOURCE
+    exit 1
+  fi
 fi
 
 exit 0
