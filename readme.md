@@ -11,7 +11,7 @@ Simply open a terminal and execute the code below. Set the permissions of the do
 <b>Note: Some systems require root privileges to do that above! There are different ways, in this example we do that with: sudo su</b>
 <p>
 Open the TVHeadend Web Interface. Go to config, channel/EPG, EPG grabber modules. Enable the grabber module "internal:XMLTV:Simple file grabber" and set the "Extra Parameter" to the absolute path that points to your XML file.
-In Case to specify a URL, you have to specify it complete with protocol, e.g. http://127.0.0.1/myepg.xml. Don't forget to save the changes.
+In Case to specify a URL, you have to specify it complete with protocol, e.g. http://127.0.0.1/myepg.xml. For now, only http/https is allowed. Don't forget to save the changes.
 
 ![TVHeadend Screenshot](images/screenshot.png)
 
