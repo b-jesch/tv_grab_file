@@ -67,7 +67,7 @@ then
   exit 0
 else
   if [[ $SOURCE == *http* ]]; then ##Case URL
-    curl -s $SOURCE
+    curl -sL $SOURCE
   elif [ -f "$SOURCE" ]; then  ##Case local File
     cat $SOURCE
   else
